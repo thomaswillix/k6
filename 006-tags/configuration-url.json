@@ -1,0 +1,18 @@
+{
+    "vus": 20,
+    "duration": "5s",
+    "thresholds": {
+        "http_reqs{url: http://localhost:8888/alphamart/api/basic/slow-if-error}": [
+            "count > 1"
+        ],
+        "http_reqs{url: http://localhost:8888/alphamart/api/basic/fast}": [
+            "count > 1"
+        ],
+        "http_req_duration{url: http://localhost:8888/alphamart/api/basic/slow-if-error}": [
+            "p(95) < 3000"
+        ],
+        "http_req_duration{url: http://localhost:8888/alphamart/api/basic/fast}": [
+            "p(95) < 200"
+        ]
+    }
+}

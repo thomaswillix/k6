@@ -1,0 +1,5 @@
+username,password,role
+user01,pass123,admin
+user02,qwerty,editor
+user03,secret,viewer
+user04,myPass,editor

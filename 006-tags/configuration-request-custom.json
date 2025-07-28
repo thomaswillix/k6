@@ -1,0 +1,24 @@
+{
+    "vus": 20,
+    "duration": "5s",
+    "thresholds": {
+        "http_req_duration{customDelay: none}": [
+            "p(95) < 100"
+        ],
+        "http_req_duration{customDelay: low}": [
+            "p(95) < 500"
+        ],
+        "http_req_duration{customDelay: high}": [
+            "p(95) < 2000"
+        ],
+        "http_reqs{customDelay: none}": [
+            "count > 0"
+        ],
+        "http_reqs{customDelay: low}": [
+            "count > 0"
+        ],
+        "http_reqs{customDelay: high}": [
+            "count > 0"
+        ]
+    }
+}

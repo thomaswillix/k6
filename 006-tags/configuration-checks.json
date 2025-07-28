@@ -1,0 +1,15 @@
+{
+    "vus": 20,
+    "duration": "5s",
+    "thresholds": {
+        "checks{check: response status code is 2xx}": [
+            "rate >= 0.99"
+        ],
+        "checks{check: response header X-Boolean is true}": [
+            "rate >= 0.5"
+        ],
+        "checks{check: response body contains field \"message\" and is not an empty string}": [
+            "rate == 1"
+        ]
+    }
+}

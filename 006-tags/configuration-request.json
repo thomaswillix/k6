@@ -1,0 +1,12 @@
+{
+    "vus": 20,
+    "duration": "5s",
+    "thresholds": {
+        "http_req_duration{url: http://localhost:8888/alphamart/api/basic/custom-delay}": [
+            "p(95) < 100"
+        ],
+        "http_reqs{url: http://localhost:8888/alphamart/api/basic/custom-delay}": [
+            "count > 0"
+        ]
+    }
+}
